@@ -49,7 +49,7 @@ router.post('/', async (req, res) => {
     console.log(`Found ${results.length} keyword records`);
     res.json({ 
       success: true, 
-      data: results,
+      data: [{ results }],
       count: results.length 
     });
 

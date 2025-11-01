@@ -45,7 +45,7 @@ router.post('/', async (req, res) => {
     console.log(`Found ${results.length} geographic metric records`);
     res.json({ 
       success: true, 
-      data: results,
+      data: [{ results }],
       count: results.length 
     });
 
